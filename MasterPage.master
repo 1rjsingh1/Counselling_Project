@@ -1,0 +1,184 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <style>
+         .auto-style133 { border-bottom: 1px solid black;
+            text-align: center;
+        }
+        table#albums 
+{
+    border-collapse:separate;
+    border-spacing:0 5px;
+}
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            margin-bottom: 0px;
+        }
+        .auto-style2 {
+            width: 189px;
+        }
+        .auto-style4 {
+            width: 17%;
+            height: 284px;
+            position: absolute;
+            top: 120px;
+            left: -31px;
+            z-index: 1;
+        }
+        .auto-style5 {
+            width: 1236px;
+        }
+        .auto-style6 {
+            text-decoration: none;
+        }
+        .auto-style8 {
+            width: 799px;
+            text-align: center;
+        }
+        .auto-style11 {
+            border-collapse: collapse;
+            border-width :0px;
+            width: 99px;
+        }
+        .auto-style134 {
+            padding:3px;
+            font-size: x-large;
+        }
+        .auto-style135 {
+            font-size: large;
+        }
+        .HyperLink7:link , .HyperLink7 :visited {
+            background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+        }
+        .HyperLink7 :hover , .HyperLink7 :active {
+             background-color: black;
+        }
+         body {
+            
+    background-image:url('Back.png');
+    background-repeat:no-repeat;
+  background-size: 300px 400px;
+    background-position: center; 
+    background-attachment :fixed;
+}
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1" style="border-collapse: collapse;">
+            <tr style="background-color :#d16fe8; border-width :0px" >
+                <td class="auto-style11">
+                    </td>
+                <td class="auto-style2">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/jossa_logo.png" />
+                </td>
+                <td class="auto-style5">
+                    <span id="ctl00_TopLinks1_lblHeader" class="auto-style134" style="box-sizing: border-box; "><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Joint Seat Allocation Authority 2018</strong></span><span id="ctl00_TopLinks1_lblSubHeader" class="cz-color-16704690" style="box-sizing: border-box; margin: 0px;"><strong><span class="auto-style134"><br />
+                    </span><span class="auto-style135">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; IITs, NITs, IIEST, IIITs and Other-GFTIs for the Academic Year 2018-19&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="ctl00_TopLinks1_lblSubHeader" class="cz-color-16704690" style="box-sizing: border-box; "><asp:Label ID="Label1" runat="server"></asp:Label>
+                    </span>
+                    &nbsp; </span><em>
+                   <asp:HyperLink CssClass="HyperLink7" style="color:black; border-color : black" runat="server" BorderWidth="2px"   NavigateUrl="~/delete.aspx" ForeColor="White">Logout</asp:HyperLink>
+                    </em></strong>
+                    <br />
+                    </span>
+                </td>
+              
+            </tr>
+            <tr>
+                <td class="auto-style11">
+                    &nbsp;</td>
+                <td class="auto-style2">
+                    &nbsp;</td>
+                <td class="auto-style5">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <table id="albums"  class="auto-style4" style="margin-left :100px; background-color :#dbdcdd;">
+                <tr style="border-width:0px; margin:0px">
+                    <td class="auto-style133" style=" margin:0px"  colspan="1" rowspan="1">
+                        Impotant_Links</td>
+                </tr>
+                 <tr style="margin:0px;">
+                    <td class="auto-style8" style=" margin:0px">
+                        <em><strong>
+                        <asp:HyperLink ID="HyperLink5" runat="server" CssClass="auto-style6" ForeColor="#6666FF" NavigateUrl="~/Home.aspx">-&gt;Home</asp:HyperLink>
+                        </strong></em>
+                    </td>
+                </tr>
+                <tr style="margin:0px;">
+                    <td class="auto-style8" style=" margin:0px">
+                        <em><strong>
+                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style6" ForeColor="#6666FF" NavigateUrl="~/Preferences.aspx">-&gt;Preferences</asp:HyperLink>
+                        </strong></em>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style8" >
+                        <em><strong>
+                        <asp:HyperLink ID="HyperLink2" runat="server" CssClass="auto-style6" ForeColor="#6666FF" NavigateUrl="~/default.aspx">-&gt;Result</asp:HyperLink>
+                        </strong></em>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style8" >
+                        <strong><em>
+                        <asp:HyperLink ID="HyperLink3" runat="server" CssClass="auto-style6" ForeColor="#6666FF" NavigateUrl="~/personal.aspx">-&gt;Personal_Details</asp:HyperLink>
+                        </em></strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style8" >
+                        <strong><em>
+                        <asp:HyperLink ID="HyperLink4" runat="server" CssClass="auto-style6" ForeColor="#6666FF" NavigateUrl="~/councelling.aspx">-&gt;Councelling Schedule</asp:HyperLink>
+                        </em></strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style8" >
+                        <strong><em>
+                        <asp:HyperLink ID="HyperLink6" runat="server" CssClass="auto-style6" ForeColor="#6666FF" NavigateUrl="~/seata.aspx">-&gt;Seat_Matrix</asp:HyperLink>
+                        </em></strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style8" >
+                        <strong><em>
+                        <asp:HyperLink ID="HyperLink7" runat="server" CssClass="auto-style6" ForeColor="#6666FF" NavigateUrl="~/ranks.aspx">-&gt;Ranks</asp:HyperLink>
+                        </em></strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style8" >
+                        <strong><em>
+                        <asp:HyperLink ID="HyperLink8" runat="server" CssClass="auto-style6" ForeColor="#6666FF" NavigateUrl="~/changepass.aspx">-&gt;Change Password</asp:HyperLink>
+                        </em></strong>
+                    </td>
+                </tr>
+                </table>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

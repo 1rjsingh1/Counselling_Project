@@ -1,0 +1,18 @@
+imports system.net
+imports system.net.mail
+button_LCick(String bcc, String cc, Subject)
+Dim email as new MailMessage()
+if bcc<> ""  then 
+email.Bcc.add(New MailAddress(bcc))
+email.to.add(New Mailaddress("to"))
+end if
+email.from= New MailAddress("abc@gmail.com") //Or set in WEb.config file as ConfigurationManager.AppSettings("from email") where from emial is a variable in web.config fiel
+email.subject="Hello"
+email.body="sdsdsdasdadadasdas"
+dm smtp1 as new system.net.mail.smtpclient()
+smtp1.host="smtp.gmail.com"
+smtp1.port=587
+smtp1.useDefaultCredentials=false
+smtp1.credentials=new
+System.net.networkCredential("Abc@yahoo.com","Password")
+smtp1.send(email)
